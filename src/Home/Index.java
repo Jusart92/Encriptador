@@ -16,7 +16,7 @@ public class Index extends javax.swing.JFrame {
 
     private static Cipher dcipher;
     private static SecretKeySpec key;
-    byte[] aesByte = Base64.getDecoder().decode("82ZFILs47AEnAIISn2cyiw==");
+    byte[] aesByte = Base64.getDecoder().decode("42ZFoTo8rUEnACcioncYes==");
 
     public Index() {
         initComponents();
@@ -135,6 +135,7 @@ public class Index extends javax.swing.JFrame {
             byte[] base64Bytes = BASE64EncoderStream.encode(buf);
             encriptacion = new String(base64Bytes);
             TFOutput.setText(encriptacion);
+            System.out.println(encriptacion);
             
         } catch (Exception e) {
         }
