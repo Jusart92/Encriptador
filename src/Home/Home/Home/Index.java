@@ -17,6 +17,7 @@ public class Index extends javax.swing.JFrame {
     private static Cipher dcipher;
     private static SecretKeySpec key;
     byte[] aesByte = Base64.getDecoder().decode("42ZFoTo8rUEnACcioncYes==");
+    //byte[] aesByte = Base64.getDecoder().decode("7tZFILs47GEnAIISn2cyiw==");
 
     public Index() {
         initComponents();
@@ -39,7 +40,7 @@ public class Index extends javax.swing.JFrame {
         TFInput.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         BUno.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        BUno.setText("Encrypt");
+        BUno.setText("Decrypt");
         BUno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BUnoActionPerformed(evt);
@@ -50,7 +51,7 @@ public class Index extends javax.swing.JFrame {
         TFOutput.setRows(5);
         jScrollPane1.setViewportView(TFOutput);
 
-        jButton1.setText("Crip");
+        jButton1.setText("Encrypt");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

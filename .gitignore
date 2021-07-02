@@ -1,0 +1,6 @@
+build/
+
+*.class
+nbproject/
+.vscode/
+*.form
